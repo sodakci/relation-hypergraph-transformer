@@ -1,0 +1,893 @@
+{
+  "format": "isolation-gnn-veristrong-evaluation-v1",
+  "checkpoint": "/home/lc/Desktop/neural/artifacts/veristrong-h64-s3.pt",
+  "checkpoint_epoch": 20,
+  "checkpoint_metadata": {
+    "history_root": "/home/lc/neural/neural/VeriStrong-main/history/neural history/train",
+    "label_root": "/home/lc/neural/neural/data/train",
+    "sample_count": 102,
+    "seed": 7,
+    "requires_veristrong_model_labels": true
+  },
+  "device": "cpu",
+  "sample_count": 34,
+  "mean_sample_loss": 0.8318420604747885,
+  "ww": {
+    "examples": 62946,
+    "accuracy": 0.8422457344390429,
+    "precision": 0.8261116959230703,
+    "recall": 0.8837924212448638,
+    "f1": 0.8539791776954296,
+    "true_positive": 29037,
+    "true_negative": 23979,
+    "false_positive": 6112,
+    "false_negative": 3818
+  },
+  "wr": {
+    "groups": 34940,
+    "top1_correct": 27325,
+    "top1_accuracy": 0.7820549513451631
+  },
+  "exact_label_match": {
+    "histories": 0,
+    "rate": 0.0
+  },
+  "direct_witness": {
+    "valid_histories": 0,
+    "rate": 0.0
+  },
+  "beam_decode": {
+    "skipped": false,
+    "beam_size": 8,
+    "max_expansions": 100000,
+    "statuses": {
+      "CERTIFIED_SAT": 3,
+      "UNKNOWN": 31
+    },
+    "certified_sat_rate": 0.08823529411764706
+  },
+  "timings": {
+    "construct": {
+      "total_ms": 297354.355055053,
+      "mean_ms": 8745.716325148618,
+      "median_ms": 6536.725353998918,
+      "max_ms": 62637.90563999646
+    },
+    "prepare": {
+      "total_ms": 82.86573298391886,
+      "mean_ms": 2.437227440703496,
+      "median_ms": 2.31782549599302,
+      "max_ms": 13.89194200601196
+    },
+    "model": {
+      "total_ms": 7260.044958020444,
+      "mean_ms": 213.53073405942482,
+      "median_ms": 192.3055450024549,
+      "max_ms": 717.6389000014751
+    },
+    "decode": {
+      "total_ms": 304821.6673749848,
+      "mean_ms": 8965.34315808779,
+      "median_ms": 5674.8691120010335,
+      "max_ms": 31201.34308499837
+    }
+  },
+  "histories": [
+    {
+      "history": "10_100_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8294376730918884,
+      "ww_examples": 404,
+      "ww_accuracy": 0.844059405940594,
+      "wr_groups": 264,
+      "wr_top1_accuracy": 0.7727272727272727,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 9006,
+      "graph": {
+        "transactions": 1001,
+        "keys": 4743,
+        "decisions": 948,
+        "constraints": 668
+      },
+      "timings_ms": {
+        "construct": 1581.1372620009934,
+        "prepare": 1.377636996039655,
+        "model": 153.7832320027519,
+        "decode": 1060.0190330005717
+      }
+    },
+    {
+      "history": "15_100_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8131986260414124,
+      "ww_examples": 860,
+      "ww_accuracy": 0.836046511627907,
+      "wr_groups": 685,
+      "wr_top1_accuracy": 0.8043795620437956,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 13090,
+      "graph": {
+        "transactions": 1501,
+        "keys": 4949,
+        "decisions": 2275,
+        "constraints": 1545
+      },
+      "timings_ms": {
+        "construct": 3374.802065001859,
+        "prepare": 2.064843996777199,
+        "model": 114.88968200137606,
+        "decode": 2941.341926001769
+      }
+    },
+    {
+      "history": "20_100_10_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.7665605545043945,
+      "ww_examples": 1122,
+      "ww_accuracy": 0.8645276292335116,
+      "wr_groups": 746,
+      "wr_top1_accuracy": 0.8029490616621984,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 23215,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4903,
+        "decisions": 2689,
+        "constraints": 1868
+      },
+      "timings_ms": {
+        "construct": 6424.696834998031,
+        "prepare": 13.89194200601196,
+        "model": 203.82753599551506,
+        "decode": 7623.602935003873
+      }
+    },
+    {
+      "history": "20_100_15_10000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.7359446287155151,
+      "ww_examples": 1187,
+      "ww_accuracy": 0.8576242628475147,
+      "wr_groups": 781,
+      "wr_top1_accuracy": 0.793854033290653,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 19796,
+      "graph": {
+        "transactions": 2001,
+        "keys": 9480,
+        "decisions": 2799,
+        "constraints": 1968
+      },
+      "timings_ms": {
+        "construct": 6025.854408995656,
+        "prepare": 1.9921769999200478,
+        "model": 200.84373600548133,
+        "decode": 5915.398206001555
+      }
+    },
+    {
+      "history": "20_100_15_2000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.9836243391036987,
+      "ww_examples": 961,
+      "ww_accuracy": 0.7481789802289281,
+      "wr_groups": 765,
+      "wr_top1_accuracy": 0.8156862745098039,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 16342,
+      "graph": {
+        "transactions": 2001,
+        "keys": 2000,
+        "decisions": 2536,
+        "constraints": 1726
+      },
+      "timings_ms": {
+        "construct": 9181.962304995977,
+        "prepare": 2.5942390057025477,
+        "model": 245.20558299991535,
+        "decode": 4373.3722799952375
+      }
+    },
+    {
+      "history": "20_100_15_4000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.7868231534957886,
+      "ww_examples": 1360,
+      "ww_accuracy": 0.836764705882353,
+      "wr_groups": 1258,
+      "wr_top1_accuracy": 0.8116057233704292,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 29534,
+      "graph": {
+        "transactions": 2001,
+        "keys": 3999,
+        "decisions": 3975,
+        "constraints": 2618
+      },
+      "timings_ms": {
+        "construct": 7404.299212998012,
+        "prepare": 2.716823000810109,
+        "model": 183.76735399942845,
+        "decode": 8221.905149999657
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.05_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.9653618931770325,
+      "ww_examples": 20132,
+      "ww_accuracy": 0.8649413868468111,
+      "wr_groups": 443,
+      "wr_top1_accuracy": 0.7042889390519187,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 100000,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4991,
+        "decisions": 21164,
+        "constraints": 20575
+      },
+      "timings_ms": {
+        "construct": 8499.815428003785,
+        "prepare": 2.269869997689966,
+        "model": 717.6389000014751,
+        "decode": 30935.719478002284
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.25_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8268917798995972,
+      "ww_examples": 4125,
+      "ww_accuracy": 0.8504242424242424,
+      "wr_groups": 943,
+      "wr_top1_accuracy": 0.7720042417815483,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 49638,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4987,
+        "decisions": 6120,
+        "constraints": 5068
+      },
+      "timings_ms": {
+        "construct": 8260.561349001364,
+        "prepare": 2.6364619989180937,
+        "model": 260.3891160033527,
+        "decode": 16478.76587799692
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.5_r_0.2_0.5_100/hist-00000/history.bincode",
+      "loss": 0.6813862323760986,
+      "ww_examples": 981,
+      "ww_accuracy": 0.8664627930682977,
+      "wr_groups": 325,
+      "wr_top1_accuracy": 0.8184615384615385,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 18934,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4986,
+        "decisions": 1636,
+        "constraints": 1306
+      },
+      "timings_ms": {
+        "construct": 6693.339197001478,
+        "prepare": 1.1270649993093684,
+        "model": 176.91940299846465,
+        "decode": 7159.613130999787
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.5_r_0.4_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8338240385055542,
+      "ww_examples": 1119,
+      "ww_accuracy": 0.8221626452189454,
+      "wr_groups": 769,
+      "wr_top1_accuracy": 0.7919375812743823,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 23426,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4985,
+        "decisions": 2699,
+        "constraints": 1888
+      },
+      "timings_ms": {
+        "construct": 6786.8386820046,
+        "prepare": 2.6030789958895184,
+        "model": 159.3957080040127,
+        "decode": 6822.717289003776
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8498991131782532,
+      "ww_examples": 1253,
+      "ww_accuracy": 0.8180367118914605,
+      "wr_groups": 1066,
+      "wr_top1_accuracy": 0.7936210131332082,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 19046,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4991,
+        "decisions": 3458,
+        "constraints": 2319
+      },
+      "timings_ms": {
+        "construct": 6648.753872999805,
+        "prepare": 2.809706005791668,
+        "model": 212.30134899815312,
+        "decode": 5032.5646639976185
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.5_r_0.6_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8422505855560303,
+      "ww_examples": 1517,
+      "ww_accuracy": 0.8193803559657218,
+      "wr_groups": 1524,
+      "wr_top1_accuracy": 0.7979002624671916,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 36308,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4985,
+        "decisions": 4707,
+        "constraints": 3041
+      },
+      "timings_ms": {
+        "construct": 6708.483686998079,
+        "prepare": 2.1803620038554072,
+        "model": 204.7735840023961,
+        "decode": 11998.641726000642
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.5_r_0.8_0.5_100/hist-00000/history.bincode",
+      "loss": 0.9208131432533264,
+      "ww_examples": 2241,
+      "ww_accuracy": 0.8259705488621151,
+      "wr_groups": 2818,
+      "wr_top1_accuracy": 0.7569198012775018,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 28922,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4990,
+        "decisions": 8403,
+        "constraints": 5059
+      },
+      "timings_ms": {
+        "construct": 7022.607580001932,
+        "prepare": 1.9700350021594204,
+        "model": 270.85340300254757,
+        "decode": 8344.284612998308
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.5_r_0_0.5_100/hist-00000/history.bincode",
+      "loss": 0.31100383400917053,
+      "ww_examples": 732,
+      "ww_accuracy": 0.8702185792349727,
+      "wr_groups": 0,
+      "wr_top1_accuracy": null,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "CERTIFIED_SAT",
+      "decode_expansions": 11678,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4987,
+        "decisions": 732,
+        "constraints": 732
+      },
+      "timings_ms": {
+        "construct": 5357.86656900018,
+        "prepare": 1.5494719991693273,
+        "model": 118.18201799906092,
+        "decode": 4266.407895003795
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.5_r_1_0.5_100/hist-00000/history.bincode",
+      "loss": 0.9465909004211426,
+      "ww_examples": 4242,
+      "ww_accuracy": 0.8401697312588402,
+      "wr_groups": 5331,
+      "wr_top1_accuracy": 0.733445882573626,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 100000,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4987,
+        "decisions": 17598,
+        "constraints": 9573
+      },
+      "timings_ms": {
+        "construct": 5943.050204004976,
+        "prepare": 3.2505599956493825,
+        "model": 458.63429000019096,
+        "decode": 30300.15825600276
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.75_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8673518896102905,
+      "ww_examples": 379,
+      "ww_accuracy": 0.8153034300791556,
+      "wr_groups": 880,
+      "wr_top1_accuracy": 0.7761363636363636,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 14938,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4985,
+        "decisions": 2190,
+        "constraints": 1259
+      },
+      "timings_ms": {
+        "construct": 5322.618375001184,
+        "prepare": 3.132858000753913,
+        "model": 133.36219399934635,
+        "decode": 4051.9044500033488
+      }
+    },
+    {
+      "history": "20_100_15_5000_0.95_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8919168710708618,
+      "ww_examples": 27,
+      "ww_accuracy": 0.8888888888888888,
+      "wr_groups": 130,
+      "wr_top1_accuracy": 0.7384615384615385,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 1856,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4987,
+        "decisions": 288,
+        "constraints": 157
+      },
+      "timings_ms": {
+        "construct": 3329.063003999181,
+        "prepare": 0.9195439997711219,
+        "model": 114.80226300045615,
+        "decode": 398.89929099445
+      }
+    },
+    {
+      "history": "20_100_15_6000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.6647037267684937,
+      "ww_examples": 1080,
+      "ww_accuracy": 0.8592592592592593,
+      "wr_groups": 926,
+      "wr_top1_accuracy": 0.8455723542116631,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 21244,
+      "graph": {
+        "transactions": 2001,
+        "keys": 5962,
+        "decisions": 3000,
+        "constraints": 2006
+      },
+      "timings_ms": {
+        "construct": 5659.144078999816,
+        "prepare": 3.156573002343066,
+        "model": 164.5633980006096,
+        "decode": 5434.340018000512
+      }
+    },
+    {
+      "history": "20_100_15_8000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.7739870548248291,
+      "ww_examples": 1217,
+      "ww_accuracy": 0.8512736236647493,
+      "wr_groups": 845,
+      "wr_top1_accuracy": 0.7988165680473372,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 18738,
+      "graph": {
+        "transactions": 2001,
+        "keys": 7816,
+        "decisions": 2958,
+        "constraints": 2062
+      },
+      "timings_ms": {
+        "construct": 6252.5544189993525,
+        "prepare": 2.2459300016635098,
+        "model": 171.54533699795138,
+        "decode": 5181.209125999885
+      }
+    },
+    {
+      "history": "20_100_20_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8614624738693237,
+      "ww_examples": 1411,
+      "ww_accuracy": 0.8235294117647058,
+      "wr_groups": 1197,
+      "wr_top1_accuracy": 0.8011695906432749,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 27142,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4998,
+        "decisions": 3876,
+        "constraints": 2608
+      },
+      "timings_ms": {
+        "construct": 8833.747975004371,
+        "prepare": 2.5520170020172372,
+        "model": 216.59876899502706,
+        "decode": 8518.655200998182
+      }
+    },
+    {
+      "history": "20_100_25_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.840569794178009,
+      "ww_examples": 1401,
+      "ww_accuracy": 0.8094218415417559,
+      "wr_groups": 1388,
+      "wr_top1_accuracy": 0.7953890489913544,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 29466,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4999,
+        "decisions": 4226,
+        "constraints": 2789
+      },
+      "timings_ms": {
+        "construct": 10149.23163500498,
+        "prepare": 2.365780994296074,
+        "model": 273.9774470028351,
+        "decode": 8712.733690001187
+      }
+    },
+    {
+      "history": "20_100_30_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.9479672908782959,
+      "ww_examples": 1260,
+      "ww_accuracy": 0.7753968253968254,
+      "wr_groups": 1077,
+      "wr_top1_accuracy": 0.7818012999071495,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 14062,
+      "graph": {
+        "transactions": 2001,
+        "keys": 5000,
+        "decisions": 3458,
+        "constraints": 2337
+      },
+      "timings_ms": {
+        "construct": 12023.827159006032,
+        "prepare": 2.543907998187933,
+        "model": 289.4198909998522,
+        "decode": 4352.6912269953755
+      }
+    },
+    {
+      "history": "20_100_5_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.9343229532241821,
+      "ww_examples": 642,
+      "ww_accuracy": 0.8613707165109035,
+      "wr_groups": 268,
+      "wr_top1_accuracy": 0.7873134328358209,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 9274,
+      "graph": {
+        "transactions": 2001,
+        "keys": 4342,
+        "decisions": 1204,
+        "constraints": 910
+      },
+      "timings_ms": {
+        "construct": 2959.8642609998933,
+        "prepare": 1.1442279937909916,
+        "model": 67.57745900540613,
+        "decode": 2348.306784995657
+      }
+    },
+    {
+      "history": "20_10_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8303343653678894,
+      "ww_examples": 117,
+      "ww_accuracy": 0.8803418803418803,
+      "wr_groups": 16,
+      "wr_top1_accuracy": 0.9375,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "CERTIFIED_SAT",
+      "decode_expansions": 2092,
+      "graph": {
+        "transactions": 201,
+        "keys": 2234,
+        "decisions": 149,
+        "constraints": 133
+      },
+      "timings_ms": {
+        "construct": 74.1999020028743,
+        "prepare": 1.0710099959396757,
+        "model": 52.890032005961984,
+        "decode": 50.0839719970827
+      }
+    },
+    {
+      "history": "20_150_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8085150718688965,
+      "ww_examples": 1844,
+      "ww_accuracy": 0.8318872017353579,
+      "wr_groups": 1682,
+      "wr_top1_accuracy": 0.8026159334126041,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 37908,
+      "graph": {
+        "transactions": 3001,
+        "keys": 4998,
+        "decisions": 5332,
+        "constraints": 3526
+      },
+      "timings_ms": {
+        "construct": 18835.411804000614,
+        "prepare": 2.4036730028456077,
+        "model": 281.7069509983412,
+        "decode": 20054.827245003253
+      }
+    },
+    {
+      "history": "20_200_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8680135011672974,
+      "ww_examples": 2317,
+      "ww_accuracy": 0.8105308588692275,
+      "wr_groups": 1962,
+      "wr_top1_accuracy": 0.7793068297655453,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 36320,
+      "graph": {
+        "transactions": 4001,
+        "keys": 5000,
+        "decisions": 6368,
+        "constraints": 4279
+      },
+      "timings_ms": {
+        "construct": 34062.8916390051,
+        "prepare": 2.622966996568721,
+        "model": 404.1628999984823,
+        "decode": 24316.628080996452
+      }
+    },
+    {
+      "history": "20_20_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 1.0934655666351318,
+      "ww_examples": 301,
+      "ww_accuracy": 0.867109634551495,
+      "wr_groups": 85,
+      "wr_top1_accuracy": 0.788235294117647,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 4176,
+      "graph": {
+        "transactions": 401,
+        "keys": 3499,
+        "decisions": 475,
+        "constraints": 386
+      },
+      "timings_ms": {
+        "construct": 198.39320300525287,
+        "prepare": 0.904476000869181,
+        "model": 67.24452199705411,
+        "decode": 175.4293640042306
+      }
+    },
+    {
+      "history": "20_250_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.9225672483444214,
+      "ww_examples": 2738,
+      "ww_accuracy": 0.8049671292914536,
+      "wr_groups": 2230,
+      "wr_top1_accuracy": 0.7699551569506726,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 32406,
+      "graph": {
+        "transactions": 5001,
+        "keys": 5000,
+        "decisions": 7334,
+        "constraints": 4968
+      },
+      "timings_ms": {
+        "construct": 62637.90563999646,
+        "prepare": 3.0769840013817884,
+        "model": 509.7608340001898,
+        "decode": 31201.34308499837
+      }
+    },
+    {
+      "history": "20_30_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8672165870666504,
+      "ww_examples": 409,
+      "ww_accuracy": 0.8606356968215159,
+      "wr_groups": 172,
+      "wr_top1_accuracy": 0.8023255813953488,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 8118,
+      "graph": {
+        "transactions": 601,
+        "keys": 4181,
+        "decisions": 767,
+        "constraints": 581
+      },
+      "timings_ms": {
+        "construct": 452.8637380062719,
+        "prepare": 0.9566049993736669,
+        "model": 57.631486997706816,
+        "decode": 565.3907460000482
+      }
+    },
+    {
+      "history": "20_40_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.7291548252105713,
+      "ww_examples": 560,
+      "ww_accuracy": 0.8732142857142857,
+      "wr_groups": 275,
+      "wr_top1_accuracy": 0.8181818181818182,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 11614,
+      "graph": {
+        "transactions": 801,
+        "keys": 4558,
+        "decisions": 1135,
+        "constraints": 835
+      },
+      "timings_ms": {
+        "construct": 809.2437449959107,
+        "prepare": 1.3908929977333173,
+        "model": 85.60477800347144,
+        "decode": 1026.9692099973327
+      }
+    },
+    {
+      "history": "20_50_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8034598231315613,
+      "ww_examples": 681,
+      "ww_accuracy": 0.869309838472834,
+      "wr_groups": 430,
+      "wr_top1_accuracy": 0.8023255813953488,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 13050,
+      "graph": {
+        "transactions": 1001,
+        "keys": 4749,
+        "decisions": 1575,
+        "constraints": 1111
+      },
+      "timings_ms": {
+        "construct": 1366.3886730064405,
+        "prepare": 0.9613829970476218,
+        "model": 77.30575899768155,
+        "decode": 1488.645480996638
+      }
+    },
+    {
+      "history": "25_100_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.84288489818573,
+      "ww_examples": 1786,
+      "ww_accuracy": 0.8258678611422172,
+      "wr_groups": 1525,
+      "wr_top1_accuracy": 0.7908196721311476,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 30568,
+      "graph": {
+        "transactions": 2501,
+        "keys": 4997,
+        "decisions": 4950,
+        "constraints": 3311
+      },
+      "timings_ms": {
+        "construct": 10237.27457300265,
+        "prepare": 3.2057579956017435,
+        "model": 265.0073950062506,
+        "decode": 12622.16921599611
+      }
+    },
+    {
+      "history": "30_100_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.8034945130348206,
+      "ww_examples": 2419,
+      "ww_accuracy": 0.8238941711451013,
+      "wr_groups": 2078,
+      "wr_top1_accuracy": 0.8132820019249278,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "UNKNOWN",
+      "decode_expansions": 41660,
+      "graph": {
+        "transactions": 3001,
+        "keys": 5000,
+        "decisions": 6746,
+        "constraints": 4497
+      },
+      "timings_ms": {
+        "construct": 17854.258914005186,
+        "prepare": 2.517608998459764,
+        "model": 305.8329129999038,
+        "decode": 22624.69969400263
+      }
+    },
+    {
+      "history": "5_100_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 0.837631106376648,
+      "ww_examples": 121,
+      "ww_accuracy": 0.7933884297520661,
+      "wr_groups": 56,
+      "wr_top1_accuracy": 0.9107142857142857,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": "CERTIFIED_SAT",
+      "decode_expansions": 2798,
+      "graph": {
+        "transactions": 501,
+        "keys": 3863,
+        "decisions": 233,
+        "constraints": 177
+      },
+      "timings_ms": {
+        "construct": 381.40365900471807,
+        "prepare": 0.659263001580257,
+        "model": 39.64573499979451,
+        "decode": 222.22903299552854
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "format": "isolation-gnn-veristrong-evaluation-v1",
+  "checkpoint": "/home/lc/Desktop/neural/artifacts/veristrong-h64-s3.pt",
+  "checkpoint_epoch": 20,
+  "checkpoint_metadata": {
+    "history_root": "/home/lc/neural/neural/VeriStrong-main/history/fig10",
+    "label_root": "/home/lc/neural/neural/data/veristrong-solver-labels/fig10",
+    "sample_count": 102,
+    "seed": 7,
+    "requires_veristrong_model_labels": true
+  },
+  "device": "cpu",
+  "sample_count": 1,
+  "mean_sample_loss": 3.7440061569213867,
+  "ww": {
+    "examples": 404,
+    "accuracy": 0.6707920792079208,
+    "precision": 0.6795366795366795,
+    "recall": 0.7787610619469026,
+    "f1": 0.7257731958762887,
+    "true_positive": 176,
+    "true_negative": 95,
+    "false_positive": 83,
+    "false_negative": 50
+  },
+  "wr": {
+    "groups": 264,
+    "top1_correct": 156,
+    "top1_accuracy": 0.5909090909090909
+  },
+  "exact_label_match": {
+    "histories": 0,
+    "rate": 0.0
+  },
+  "direct_witness": {
+    "valid_histories": 0,
+    "rate": 0.0
+  },
+  "beam_decode": {
+    "skipped": true,
+    "beam_size": 8,
+    "max_expansions": 100000,
+    "statuses": {},
+    "certified_sat_rate": null
+  },
+  "timings": {
+    "construct": {
+      "total_ms": 1635.201237993897,
+      "mean_ms": 1635.201237993897,
+      "median_ms": 1635.201237993897,
+      "max_ms": 1635.201237993897
+    },
+    "model": {
+      "total_ms": 117.34171000716742,
+      "mean_ms": 117.34171000716742,
+      "median_ms": 117.34171000716742,
+      "max_ms": 117.34171000716742
+    },
+    "decode": {
+      "total_ms": 0.004429006366990507,
+      "mean_ms": 0.004429006366990507,
+      "median_ms": 0.004429006366990507,
+      "max_ms": 0.004429006366990507
+    }
+  },
+  "histories": [
+    {
+      "history": "10_100_15_5000_0.5_r_0.5_0.5_100/hist-00000/history.bincode",
+      "loss": 3.7440061569213867,
+      "ww_examples": 404,
+      "ww_accuracy": 0.6707920792079208,
+      "wr_groups": 264,
+      "wr_top1_accuracy": 0.5909090909090909,
+      "exact_label_match": false,
+      "direct_witness_valid": false,
+      "decode_status": null,
+      "decode_expansions": null,
+      "graph": {
+        "transactions": 1001,
+        "keys": 4743,
+        "decisions": 948,
+        "constraints": 668
+      },
+      "timings_ms": {
+        "construct": 1635.201237993897,
+        "model": 117.34171000716742,
+        "decode": 0.004429006366990507
+      }
+    }
+  ]
+}
